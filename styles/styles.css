@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+:root {
+  --main-color: rgb(82, 122, 255);
+  --second-color: rgb(54, 233, 150);
+  --firsttext-color: rgb(59, 59, 59);
+  --secondtext-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 9px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--firsttext-color); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.layer-1 {
+  width: 50%;
+  height: 100vh;
+  background: var(--main-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.layer-2 {
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  background: var(--main-color);
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.layer-text {
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer-text h1 {
+  font-size: calc(1.1rem + 3.6vw);
+}
+.social__media {
+  left: 5%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.iconSocial {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.3rem !important;
+  color: var(--firsttext-color) !important;
+  background: #fff;
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  transition: all 500ms;
+}
+.iconSocial:hover {
+  transform: scale(1.4);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://previews.123rf.com/images/visivasnc/visivasnc1702/visivasnc170200065/72756385-doctor-leyendo-un-libro-m%C3%A9dico-en-el-escritorio-de-la-oficina-concepto-de-salud-m%C3%A9dico-y-farmacia-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff !important;
+  position: relative;
+  overflow-x: hidden;
+  background-clip: blue;
+}
+
+.hero__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__text {
+  flex: 1;
+}
+
+.hero__container .hero__image {
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+.hero__image img {
+  width: 70%;
+}
+
+.hero__container h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: calc(10px + 3vw);
+  line-height: 60px;
+  margin-bottom: 2rem;
+  border: none;
+}
+.button__general {
+  background: var(--second-color);
+  color: #fff !important;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.button__buy {
+  background: var(--main-color);
+  color: #fff !important;
+  display: block;
+  margin: 1rem 0;
+  width: 40%;
+  text-align: center;
+  padding: 0.7rem 0;
+  border-radius: 2rem;
+}
+.button__dowload {
+  background: var(--second-color);
+  color: #fff !important;
+  display: block;
+  margin: 1rem 0;
+  width: 40%;
+  text-align: center;
+  padding: 0.7rem 0;
+  border-radius: 2rem;
+}
+
+/* section book */
+.about__book {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: var(--firsttext-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__bookContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__bookText {
+  padding: 1rem;
+  flex: 0.6;
+}
+.about__bookText h1 {
+  font-size: calc(1.1rem + 3vw);
+}
+.about__bookText p {
+  text-align: justify;
+  padding: 1.5rem 0;
+}
+.about__bookInfo {
+  padding: 1rem;
+  flex: 0.4;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.book__detail {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.book__detail h1 {
+  font-size: calc(1.1rem + 3vw);
+}
+.book__detailContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.book__defailLeft {
+  font-size: 2rem;
+  flex: 1;
+}
+
+.book__detailRight {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.cardDetail {
+  margin: 1rem auto;
+  border: solid 1px rgba(165, 165, 165, 0.555);
+  padding: 1.2rem;
+  border-radius: 1.4rem;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.164) !important;
+  position: relative;
+}
+.card-decoration {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100.1%;
+  height: 60px;
+  border-top-left-radius: 1.4rem;
+  border-top-right-radius: 1.4rem;
+  background: var(--main-color);
+  z-index: -1;
+}
+.cardDetail i {
+  font-size: 1.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.185);
+}
+@media (max-width: 800px) {
+  .about__bookimage {
+    width: 50%;
+  }
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__container h1 {
+    line-height: 40px;
+  }
+  .hero__container img {
+    width: 50%;
+    margin-top: 4rem;
+  }
+  .hero__container a {
+    margin: 1rem auto;
+    width: 60%;
+  }
+
+  .about__book {
+    height: 120vh;
+  }
+  .about__bookContainer {
+    flex-direction: column;
+  }
+  .about__bookText {
+    padding: 0 !important;
+  }
+
+  .book__detailContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .about__book {
+    height: 137vh;
+  }
+  .hero__container img {
+    width: 70%;
+    margin-top: 4rem;
+  }
+}
