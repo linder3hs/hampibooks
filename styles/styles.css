@@ -114,6 +114,10 @@ header {
   margin-bottom: 2rem;
   border: none;
 }
+
+.hero__container .subtitle__hero {
+  font-size: calc(5px + 1.7vw);
+}
 .button__general {
   background: var(--second-color);
   color: #fff !important;
@@ -243,9 +247,16 @@ header {
 }
 .container__autors ul {
   margin-bottom: 20px;
+  text-align: left;
 }
 .container__autors ul li {
   font-size: 0.8rem;
+}
+
+.information__footer {
+  text-align: center;
+  border-top: 1px solid rgb(102, 102, 102);
+  padding-top: 20px;
 }
 
 @media (max-width: 800px) {
@@ -273,7 +284,7 @@ header {
   }
 
   .about__book {
-    height: 150vh;
+    height: 160vh;
   }
   .about__bookContainer {
     flex-direction: column;
@@ -282,7 +293,7 @@ header {
     padding: 0 !important;
   }
   .about__bookInfo img {
-    width: 15%;
+    width: 30%;
   }
   .book__detailContainer {
     flex-direction: column;
