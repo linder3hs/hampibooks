@@ -333,6 +333,9 @@ header {
   .about__book {
     height: 180vh;
   }
+  .hero__container h1 {
+    line-height: 27px;
+  }
 }
 @keyframes buttonAtention {
   from {
