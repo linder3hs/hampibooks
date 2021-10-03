@@ -3,9 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 :root {
-  --main-color: rgb(82, 122, 255);
-  --main-color-hover: rgb(70, 102, 206);
-  --second-color: rgb(54, 233, 150);
+  --main-color: rgb(42, 84, 224);
+  --main-color-hover: rgb(59, 91, 194);
+  --principal: rgb(49, 83, 196);
+  --second-color: rgb(85, 215, 238);
   --second-color-hover: rgb(51, 201, 131);
   --firsttext-color: rgb(59, 59, 59);
   --secondtext-color: #fff;
@@ -76,9 +77,10 @@ header {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://previews.123rf.com/images/visivasnc/visivasnc1702/visivasnc170200065/72756385-doctor-leyendo-un-libro-m%C3%A9dico-en-el-escritorio-de-la-oficina-concepto-de-salud-m%C3%A9dico-y-farmacia-.jpg);
+    url(../img/doctor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff !important;
   position: relative;
   overflow: hidden;
@@ -119,7 +121,7 @@ header {
   font-size: calc(5px + 1.7vw);
 }
 .button__general {
-  background: var(--second-color);
+  background: var(--principal);
   color: #fff !important;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
@@ -127,7 +129,7 @@ header {
 }
 
 .button__general:hover {
-  background: var(--second-color-hover);
+  background: var(--main-color);
 }
 
 .button__buy {
@@ -204,7 +206,7 @@ header {
   font-size: 1.5rem;
 }
 .about__bookInfo img {
-  width: 30%;
+  width: 24%;
 }
 
 .book__detail {
@@ -284,7 +286,7 @@ header {
   }
 
   .about__book {
-    height: 160vh;
+    height: 180vh;
   }
   .about__bookContainer {
     flex-direction: column;
@@ -320,8 +322,18 @@ header {
     width: 70%;
     margin-top: 4rem;
   }
+  .button__buy {
+    width: 90% !important;
+  }
 }
-
+@media (max-width: 366px) {
+  .hero__container h1 {
+    line-height: 20px;
+  }
+  .about__book {
+    height: 180vh;
+  }
+}
 @keyframes buttonAtention {
   from {
     transform: scale(1);
