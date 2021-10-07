@@ -40,7 +40,7 @@
           <a href="#book" class="button__general"
             >More Information <i class="fas fa-arrow-right icon__see"></i
           ></a>
-          
+        </div>
         <div class="hero__image">
           <img src="./img/book.png" alt="" />
         </div>
@@ -94,17 +94,16 @@
           <img src="./img/book2.png" alt="" />
           <p>100 USD</p>
           <p>Free Delivery Worldwide</p>
-          <div id="smart-button-container">
-            <div style="text-align: center; margin-top: 50px">
-              <div id="paypal-button-container"></div>
-            </div>
-          </div>
-        </div>
           <!-- <a
             href="https://docs.google.com/forms/d/1C0pqth2xqXkHy25A7qPH-dbQnr90qIdX2Yj-QemK3O8/edit"
             class="button__buy"
             >Order Now <i class="fas fa-dollar-sign"></i
           ></a> -->
+          <div id="smart-button-container">
+            <div style="text-align: center; margin-top: 50px">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -219,7 +218,11 @@
     <script>
       new WOW().init();
     </script>
-
+    <div id="smart-button-container">
+      <div style="text-align: center">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
     <script
       src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
       data-sdk-integration-source="button-factory"
